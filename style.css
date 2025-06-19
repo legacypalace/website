@@ -1,0 +1,76 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: #fff;
+}
+header {
+  background: url('images/hero.jpg') center/cover no-repeat;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 2em;
+  background: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+}
+nav .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5em;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 0.2em;
+}
+.hero p {
+  font-size: 1.2em;
+}
+.cta-btn {
+  background: #eab308;
+  color: black;
+  padding: 0.7em 1.5em;
+  margin-top: 1em;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+section {
+  padding: 3em 2em;
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+.gallery img {
+  width: 300px;
+  border-radius: 10px;
+}
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #f4f4f4;
+  font-size: 0.9em;
+}
