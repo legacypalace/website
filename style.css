@@ -1,76 +1,118 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
+/* Base Reset */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
-  background: #fff;
+  box-sizing: border-box;
 }
-header {
-  background: url('images/hero.jpg') center/cover no-repeat;
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: black;
+  height: 100%; width: 100%;
   color: white;
-  height: 140vh;
-  text-align: center;
+  overflow-x: hidden;
+}
+
+/* Logo Section */
+.lplogo {
+  background-image: url('images/Elevation0.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.lplogo::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.lplogo-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 1em;
 }
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 1em 2em;
-  background: rgba(0, 0, 0, 0.5);
-  position: sticky;
-  top: 0;
+
+.lplogo-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
 }
-nav .logo {
-  font-size: 1.5em;
-  font-weight: bold;
+
+.lplogo-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 1em;
 }
+
+/* Navigation */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5em;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
 }
+
 nav a {
   color: white;
   text-decoration: none;
-}
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
-}
-.hero p {
-  font-size: 1.2em;
-}
-.cta-btn {
-  background: #eab308;
-  color: black;
-  padding: 0.7em 1.5em;
-  margin-top: 1em;
-  display: inline-block;
-  border-radius: 5px;
-  text-decoration: none;
   font-weight: bold;
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: border 0.3s;
 }
-section {
-  padding: 3em 2em;
-  max-width: 1000px;
+
+nav a:hover {
+  border-bottom: 2px solid white;
+}
+
+/* Main Content */
+main {
+  background-color: black;
+  padding: 2em 1.5em;
+}
+
+/* Section Content */
+.section-content {
+  max-width: 900px;
   margin: auto;
-  text-align: center;
+  padding: 2em 1em;
 }
-.gallery {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1em;
+
+.section-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  color: white;
+  /*   color: #ffd700; */
 }
-.gallery img {
-  width: 300px;
-  border-radius: 10px;
+
+.section-content h3 {
+  font-size: 1.3rem;
+  margin: 1.5em 0 1em;
+  color: white;
 }
-footer {
-  text-align: center;
-  padding: 1em;
-  background: #f4f4f4;
-  font-size: 0.9em;
+
+.section-content ul {
+  padding-left: 1.2em;
+}
+
+.section-content li {
+  margin-bottom: 0.5em;
+}
+
+.section-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
